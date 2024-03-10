@@ -1,0 +1,23 @@
+version: '3.5'
+
+services:
+  elm:
+    image: elm
+    build:
+      context: .
+      dockerfile: ./client/Dockerfile-dev-elm
+    ports:
+      - 12443:10443
+    volumes:
+      - ./client/:/source
+    command: ["elm-app", "start", "0.0.0.0"]
+    networks:
+      - frontend
+
+networks:
+  frontend:
+    name: stency_frontend
+    driver: bridge
+    enable_ipv6: false
+    internal: false
+    external: false

@@ -1,0 +1,3 @@
+[submodule "client/elm-mdc"]
+	path = client/elm-mdc
+	url = https://github.com/aforemny/elm-mdc

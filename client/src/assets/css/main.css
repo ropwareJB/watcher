@@ -1,0 +1,21 @@
+html {
+	height: 100%;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100%;
+	font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+	text-align: center;
+	color: #293c4b;
+}
+
+#root{
+	height: 100%;
+}
+
+h1 {
+	font-size: 30px;
+}
