@@ -104,7 +104,7 @@ view model =
 
 renderPage : Model -> Html Msg
 renderPage (Model model) =
-    Page.Tree.view model.pageTree
+    Page.Tree.view PageTreeMsg model.pageTree
 
 
 subscriptions : Model -> Sub Msg
